@@ -176,7 +176,7 @@ section.stars li > img {
 
 .short-lines {
   width: 60%;
-  float: right !important;
+  float: right;
 }
 
 section.short-lines > ul > li:nth-child(odd) {
@@ -200,4 +200,45 @@ section.long-lines > ul > li:nth-child(even) {
 section.long-lines {
   width: 100%;
   float: left;
+}
+
+@media (max-width: 900px) {
+  section.stars {
+    width: 50vw;
+    height: 40vh;
+  }
+
+  section.long-lines {
+    width: 50vw;
+    float: left;
+  }
+
+  section.short-lines {
+    width: 50vw;
+  }
+
+  section.long-lines ul, section.short-lines ul {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-auto-flow: column;
+  }
+
+  section.long-lines > ul > li:nth-child(odd) {
+    height: 60vh;
+    background-color: #b22234;
+  }
+
+  section.long-lines > ul > li:nth-child(even) {
+    height: 60vh;
+    background: white;
+  }
+
+  section.short-lines > ul > li:nth-child(odd) {
+    background-color: #b22234;
+    height: 100vh;
+  }
+
+  section.short-lines > ul > li:nth-child(even) {
+    height: 100vh;
+  }
 }
