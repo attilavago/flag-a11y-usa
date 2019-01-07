@@ -140,9 +140,10 @@ section.stars {
 
 section.stars > ul {
   background-color: #3c3b6e;
-  width: calc(100% - 40px);
+  width: 100%;
   padding: 20px;
-  height: 373px;
+  height: 100%;
+  box-sizing: border-box;
 }
 
 section.stars li {
@@ -150,6 +151,7 @@ section.stars li {
   display: inline-block;
   width: 15.6%;
   height: calc(100% / 9);
+  text-align: center;
 }
 
 section.stars li:nth-child(11),
@@ -163,12 +165,11 @@ section.stars li:nth-child(7),
 section.stars li:nth-child(18),
 section.stars li:nth-child(29),
 section.stars li:nth-child(40) {
-  padding-left: 6.25%;
+  padding-left: 8.25%;
 }
 
 section.stars li > img {
-  max-width: 48%;
-  display: block;
+  max-height: 90%;
   margin: 0 auto;
   object-fit: contain;
 }
