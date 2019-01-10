@@ -242,3 +242,21 @@ section.long-lines {
     height: 100vh;
   }
 }
+
+@media (min-width: 440px) and (max-width: 720px) {
+    section.stars li {
+        width: 14.8%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 440px) {
+    section.stars li {
+        width: 13.6%;
+    }
+
+    section.stars li > img {
+        max-height: 65%;
+    }
+}
+
+
