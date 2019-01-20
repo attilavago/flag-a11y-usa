@@ -130,11 +130,12 @@ table {
 
 body {
   width: 100vw;
+  height: 100vh;
 }
 
 section.stars {
   width: 40vw;
-  height: 413px;
+  height: 50vh;
   float: left;
 }
 
@@ -176,25 +177,26 @@ section.stars li > img {
 
 .short-lines {
   width: 60%;
+  height: 50vh;
   float: right;
 }
 
 section.short-lines > ul > li:nth-child(odd) {
   background-color: #b22234;
-  height: 59px;
+  height: calc(50vh / 7);
 }
 
 section.short-lines > ul > li:nth-child(even) {
-  height: 59px;
+    height: calc(50vh / 7);
 }
 
 section.long-lines > ul > li:nth-child(odd) {
-  height: 59px;
+    height: calc(50vh / 6);
 }
 
 section.long-lines > ul > li:nth-child(even) {
   background-color: #b22234;
-  height: 59px;
+    height: calc(50vh / 6);
 }
 
 section.long-lines {
