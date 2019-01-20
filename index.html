@@ -8,8 +8,13 @@
     <title>Static Template</title>
   </head>
   <body>
+    <ul class="skip">
+      <li><a href="#stars">skip to Stars</a></li>
+      <li><a href="#shortStripes">skip to Short Stripes</a></li>
+      <li><a href="#longStripes">skip to Long Stripes</a></li>
+    </ul>
     <section role="main" class="stars">
-      <ul>
+      <ul id="stars">
         <li tabindex="0">
           <img
             src="./assets/images/white-star.png"
@@ -313,7 +318,7 @@
       </ul>
     </section>
     <section role="complementary" class="short-lines">
-      <ul>
+      <ul id="shortStripes">
         <li
           aria-label="short red stripe representing the colony of Delaware"
           tabindex="0"
@@ -345,7 +350,7 @@
       </ul>
     </section>
     <section role="complementary" class="long-lines">
-      <ul>
+      <ul id="longStripes">
         <li
           aria-label="long white stripe representing the colony of Sount Carolina"
           tabindex="0"

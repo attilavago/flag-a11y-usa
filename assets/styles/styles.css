@@ -133,6 +133,30 @@ body {
   height: 100vh;
 }
 
+.skip {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.skip a {
+  position: absolute;
+  left: -9999px;
+  background: #b22234;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  width: fit-content;
+}
+
+.skip a:focus {
+  display: block;
+  position: static;
+  left: 0;
+  padding: .25em 1em;
+}
+
 section.stars {
   width: 40vw;
   height: 50vh;
